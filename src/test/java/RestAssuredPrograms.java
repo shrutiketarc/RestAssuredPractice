@@ -1,6 +1,7 @@
 import io.restassured.RestAssured;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
@@ -27,7 +28,18 @@ public class RestAssuredPrograms {
             System.out.println(h);
         }
 
+<<<<<<< Updated upstream
         //testes sgjsgj
+=======
+        String header = response.header("Content-type");
+        System.out.println(header);
+
+        ResponseBody responseBody = response.body();
+        responseBody.asString();
+
+        JsonPath jsp = response.jsonPath();
+        System.out.println(jsp.getString(""));
+>>>>>>> Stashed changes
     }
 
     @Test
