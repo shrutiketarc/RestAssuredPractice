@@ -37,8 +37,9 @@ public class RestAssuredPrograms {
         JsonPath jsp = response.jsonPath();
         System.out.println(jsp.getString(""));
 
-        //djhjhskhkdhkd
-
+        POJO pj = responseBody.as(POJO.class);
+        System.out.println(pj.accounts);
+        System.out.println(pj.address.city);
     }
 
     @Test
