@@ -28,9 +28,6 @@ public class RestAssuredPrograms {
             System.out.println(h);
         }
 
-<<<<<<< Updated upstream
-        //testes sgjsgj
-=======
         String header = response.header("Content-type");
         System.out.println(header);
 
@@ -39,7 +36,7 @@ public class RestAssuredPrograms {
 
         JsonPath jsp = response.jsonPath();
         System.out.println(jsp.getString(""));
->>>>>>> Stashed changes
+
     }
 
     @Test
