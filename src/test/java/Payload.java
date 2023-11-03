@@ -4,6 +4,7 @@ public class Payload {
 
  private static String accountId;
     private static String accountNum;
+ private static String address;
 
     Payload(String id, String num)  {
         accountId =  id;
