@@ -37,14 +37,6 @@ public class RestAssuredPrograms {
         JsonPath jsp = response.jsonPath();
         System.out.println(jsp.getString(""));
 
-        //sjajshkk kajskjkas
-
-           //sjajshkk kajskjkas
-        //sjajshkk kajskjkas
-           //sjajshkk kajskjkas
-
-           //sjajshkk teuhehkh
-
     }
 
     @Test
