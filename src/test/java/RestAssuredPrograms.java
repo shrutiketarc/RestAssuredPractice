@@ -1,4 +1,6 @@
 import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
 
@@ -11,9 +13,10 @@ public class RestAssuredPrograms {
         RestAssured.baseURI = "";
         RequestSpecification httpRequest = RestAssured.given().auth().oauth2("");
         httpRequest.queryParam("","");
-        httpRequest.header("","")
-        .get("");
-    // Respnse
+        httpRequest.header("","");
+
+        Response response = httpRequest.get("");
+        response.getStatusCode();
     }
 
     @Test
